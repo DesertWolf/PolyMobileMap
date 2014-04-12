@@ -1,0 +1,31 @@
+Santan Hall - SANTN (santanhall.jpg): 
+Latitude: 		N33.30590° (NAD83 datum)
+Longitude: 		W111.67831°
+Elevation: 		1338 ft MSL
+Biology labs
+Chemistry labs
+
+Peralta Hall - PRLTA (peraltahall.jpg):
+Latitude: 		N33.30592° (NAD83 datum)
+Longitude: 		W111.67930°
+Elevation: 		1335 ft MSL
+Engineering Studios
+Computing labs
+
+Technology Center - TECH (techcenter.jpg):
+Latitude: 		N33.30516° (NAD83 datum)
+Longitude: 		W111.68022°
+Elevation: 		1335 ft MSL
+GIT Commercial Photography Studio
+Technical Imaging Laboratory
+Print and Imaging Laboratory
+Fuel Cells Laboratory
+Electronics labs
+
+Interdisciplinary Science and Technology Building 3 - ISTB3 (istb3.jpg):
+Latitude: 		N33.30513° (NAD83 datum)
+Longitude: 		W111.67305°
+Elevation: 		1341 ft MSL
+Applied Psychology labs
+Applied Biological Sciences labs
+Laboratory for Algae Research and Biotechnology

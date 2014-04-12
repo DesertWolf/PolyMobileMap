@@ -1,0 +1,116 @@
+
+
+<script>
+    $(function() {
+
+        $("#map").goMap({
+
+            latitude: 33.307132,
+            longitude: -111.680553,
+            zoom:16
+        }) ;
+
+
+
+        /* $.mobile.changePage('#mapPage') ;
+         $.mobile.changePage('#buildList', 'none', false, false);  */
+
+
+        $('#splashBtn').click(function(){
+
+        })
+
+        $('#SANTN').click(function(){
+            $.mobile.changePage( "#mapPage", { transition: "slideup"} );
+            $('#mapTitle').html('Santan Hall');
+            $.goMap.removeMarker($.goMap.markers[0]);
+            $.goMap.setMap({latitude:'33.30590',longitude:'-111.6783'});
+            $.goMap.createMarker({latitude:'33.30590',longitude:'-111.6783', icon:'images/sparkyMapIcon.png',
+                html: "<h1>Santan Hall</h1><br/><img class='infoImage' src='images/santanhall.jpg'/>"
+            });
+            hideByClick: true
+
+        });
+
+        $('#PRLTA').click(function(){
+            $.mobile.changePage( "#mapPage", { transition: "slideup"} );
+            $('#mapTitle').html('Peralta Hall');
+            $.goMap.removeMarker($.goMap.markers[0]);
+            $.goMap.setMap({latitude:'33.30592',longitude:'-111.67930'});
+            $.goMap.createMarker({latitude:'33.30592',longitude:'-111.67930', icon:'images/sparkyMapIcon.png',
+                html: "<h1>Peralta Hall</h1><br/><img class='infoImage' src='images/peraltahall.jpg'/>"
+            });
+            hideByClick: true
+        })
+
+        $('#TECH').click(function(){
+            $.mobile.changePage( "#mapPage", { transition: "slideup"} );
+            $('#mapTitle').html('Technology Center');
+            $.goMap.removeMarker($.goMap.markers[0]);
+            $.goMap.setMap({latitude:'33.30516',longitude:'-111.68022'});
+            $.goMap.createMarker({latitude:'33.30516',longitude:'-111.68022', icon:'images/sparkyMapIcon.png'}) ;
+        })
+
+        $('#ISTB3').click(function(){
+            $.mobile.changePage( "#mapPage", { transition: "slideup"} );
+            $('#mapTitle').html('ISTB 3');
+            $.goMap.removeMarker($.goMap.markers[0]);
+            $.goMap.setMap({latitude:'33.30513',longitude:'-111.673052'});
+            $.goMap.createMarker({latitude:'33.30513',longitude:'-111.67305', icon:'images/sparkyMapIcon.png'});
+        })
+
+
+
+
+
+    })
+</script>
+
+
+
+<!-- Second Page -->
+<div data-role="page" id="buildList">
+
+    <div data-role="header">
+        <h1>ASU Poly</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+        <ul data-role="listview">
+            <li><a href="#" class="mapSelect" id="SANTN"> <img class="ul-li-thumb" src="images/santanhall.jpg"/> Santan Hall</a></li>
+            <li><a href="#" class="mapSelect" id="PRLTA"> <img class="ul-li-thumb" src="images/peraltahall.jpg"/>Peralta Hall</a></li>
+            <li><a href="#" class="mapSelect" id="TECH"> <img class="ul-li-thumb" src="images/techcenter.jpg"/>Technology Center</a></li>
+            <li><a href="#" class="mapSelect" id="ISTB3"> <img class="ul-li-thumb" src="images/istb3.jpg"/>ISTB3</a></li>
+
+        </ul>
+
+        <p>View internal page called <a href="#mapPage" data-prefetch>bar</a></p>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>CTI</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+
+<!-- Start of second page -->
+<div data-role="page" id="mapPage"  >
+
+    <div data-role="header" >
+        <a href="#buildList" >back</a><h1 id="mapTitle">ASU Poly Map</h1>
+    </div><!-- /header -->
+
+    <div data-role="content">
+
+        <div id="map" style="width:300px;height:400px"></div>
+
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>CTI</h4>
+    </div><!-- /footer -->
+</div><!-- /page -->
+
+
+
